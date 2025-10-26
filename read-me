@@ -1,0 +1,9 @@
+| Feature                   | **Merge Sort**                                                 | **Quick Sort**                                                                     |
+| ------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Strategy**              | Divide → Conquer → Combine                                     | Divide → Conquer (in-place partition)                                              |
+| **Process**               | Splits list into halves recursively, then merges sorted halves | Picks a pivot, partitions elements smaller or larger than pivot, sorts recursively |
+| **Stability**             | Stable (keeps equal elements’ order)                           | Not stable in general                                                              |
+| **Time Complexity (avg)** | O(n log n)                                                     | O(n log n)                                                                         |
+| **Worst Case**            | O(n log n)                                                     | O(n²) (when pivot is poor)                                                         |
+| **Space Complexity**      | O(n) (needs extra space for merging)                           | O(log n) (in-place, recursive stack)                                               |
+| **Example Behavior**      | Splits then merges sorted halves                               | Reorders in-place around a pivot                                                   |
